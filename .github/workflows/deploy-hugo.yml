@@ -11,12 +11,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Checkout submodules
+
+      - name: Checkout Submodules
         uses: textbook/git-checkout-submodule-action@master
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: latest
+          extended: true
 
       - name: Build 
         run: hugo
