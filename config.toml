@@ -1,0 +1,32 @@
+baseURL = "/"
+title = "Xdi8aho"
+
+theme = "docsy"
+
+contentDir = "content/art-x-xdi8"
+defaultContentLanguage = "art-x-xdi8"
+defaultContentLanguageInSubdir = false
+
+[languages]
+[languages.art-x-xdi8]
+title = "Xdi8aho"
+description = ""
+languageName = "Xdi8aho"
+contentDir = "content/art-x-xdi8"
+time_format_default = "2006.01.02"
+time_format_blog = "2006.01.02"
+[languages.cmn-Hans]
+title = "希顶语"
+description = ""
+languageName = "中文"
+contentDir = "content/cmn-Hans"
+time_format_default = "2006.01.02"
+time_format_blog = "2006.01.02"
+[languages.en]
+title = "Shidinn Language"
+description = ""
+languageName ="English"
+contentDir = "content/en"
+time_format_default = "2006.01.02"
+time_format_blog = "2006.01.02"
+
