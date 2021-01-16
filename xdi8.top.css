@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Fira Xdi8";
+    src: url(https://cdn.jsdelivr.net/gh/edward-martyr/syyon-vencie@2f449da/FiraXdi8-Regular-subset.ttf) format('ttf')
+}
+
+@font-face {
+    font-family: 'Fira Xdi8 Variable';
+    src: url(https://cdn.jsdelivr.net/gh/edward-martyr/syyon-vencie@2f449da/Fira%20Xdi8%20Variable-subset.woff2) format('woff2-variations');
+    font-weight: 100 900
+}
+
+h1:lang(art-x-xdi8), .xdi8-font {
+    font-family: "Fira Xdi8 Variable", "Fira Xdi8", FiraGO, "Fira Sans", "Source Sans Variable", "MI Lan Pro VF", sans-serif;
+}
+
+.mt-0 {
+    margin-bottom: -0.5em;
+}
+
+.lead.xdi8-font {
+    font-size: 1.35rem 
+}
+

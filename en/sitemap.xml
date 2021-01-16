@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="art-x-xdi8"
+                href="/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cmn-hans"
+                href="/cmn-hans/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="art-x-xdi8"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cmn-hans"
+                href="/cmn-hans/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="art-x-xdi8"
+                href="/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cmn-hans"
+                href="/cmn-hans/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
+                />
+  </url>
+  
+</urlset>
