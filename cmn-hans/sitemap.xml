@@ -3,59 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/xdi8.top/cmn-hans/categories/</loc>
+    <loc>/cmn-hans/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="art-x-xdi8"
-                href="/xdi8.top/categories/"
+                href="/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/xdi8.top/en/categories/"
+                href="/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cmn-hans"
-                href="/xdi8.top/cmn-hans/categories/"
+                href="/cmn-hans/categories/"
                 />
   </url>
   
   <url>
-    <loc>/xdi8.top/cmn-hans/</loc>
+    <loc>/cmn-hans/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="art-x-xdi8"
-                href="/xdi8.top/"
+                href="/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/xdi8.top/en/"
+                href="/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cmn-hans"
-                href="/xdi8.top/cmn-hans/"
+                href="/cmn-hans/"
                 />
   </url>
   
   <url>
-    <loc>/xdi8.top/cmn-hans/tags/</loc>
+    <loc>/cmn-hans/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="art-x-xdi8"
-                href="/xdi8.top/tags/"
+                href="/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/xdi8.top/en/tags/"
+                href="/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cmn-hans"
-                href="/xdi8.top/cmn-hans/tags/"
+                href="/cmn-hans/tags/"
                 />
   </url>
   

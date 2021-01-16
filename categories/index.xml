@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xdi8 – Categories</title>
-    <link>/xdi8.top/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Xdi8</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/xdi8.top/categories/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
       
