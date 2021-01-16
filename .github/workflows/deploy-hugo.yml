@@ -22,8 +22,7 @@ jobs:
           extended: true
 
       - name: Install PostCSS
-        uses: actions/npm@master
-        args: "install postcss-cli"
+        run: npm install postcss-cli
 
       - name: Build 
         run: hugo
