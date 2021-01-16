@@ -21,6 +21,10 @@ jobs:
           hugo-version: latest
           extended: true
 
+      - name: Install PostCSS
+        uses: actions/npm@master
+        args: "install postcss-cli"
+
       - name: Build 
         run: hugo
 
@@ -31,3 +35,4 @@ jobs:
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
           commit_message: ${{ github.event.head_commit.message }}
+
