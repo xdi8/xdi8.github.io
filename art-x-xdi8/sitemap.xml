@@ -25,13 +25,13 @@
     <loc>/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="cmn-hans"
-                href="/cmn-hans/"
+                hreflang="en"
+                href="/en/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="/en/"
+                hreflang="cmn-hans"
+                href="/cmn-hans/"
                 />
     <xhtml:link
                 rel="alternate"

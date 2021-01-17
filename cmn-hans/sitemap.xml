@@ -22,25 +22,6 @@
   </url>
   
   <url>
-    <loc>/cmn-hans/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="art-x-xdi8"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cmn-hans"
-                href="/cmn-hans/"
-                />
-  </url>
-  
-  <url>
     <loc>/cmn-hans/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -56,6 +37,25 @@
                 rel="alternate"
                 hreflang="cmn-hans"
                 href="/cmn-hans/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/cmn-hans/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="art-x-xdi8"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cmn-hans"
+                href="/cmn-hans/"
                 />
   </url>
   
