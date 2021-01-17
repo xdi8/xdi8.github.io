@@ -40,7 +40,7 @@ time_format_blog = "2021-01-16"
 [[menu.main]]
     name = "Wiki"
     weight = 50
-    url = "https://wiki.xdi8.top"
+    url = "http://wiki.xdi8.top"
 
 [languages.art-x-xdi8.params.links]
 [[languages.art-x-xdi8.params.links.user]]
