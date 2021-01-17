@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Xdi8"
+title = "Xdi8 Aho"
 
 theme = "docsy"
 
@@ -9,9 +9,9 @@ defaultContentLanguageInSubdir = false
 
 [languages]
 [languages.art-x-xdi8]
-title = "Xdi8"
+title = "Xdi8 aho"
 description = ""
-languageName = "Xdi8"
+languageName = "🌏 Xdi8"
 contentDir = "content/art-x-xdi8"
 time_format_default = "2021-01-16"
 time_format_blog = "2021-01-16"
@@ -19,7 +19,7 @@ time_format_blog = "2021-01-16"
 [languages.cmn-Hans]
 title = "希顶语"
 description = ""
-languageName = "中文"
+languageName = "🌏 中文"
 contentDir = "content/cmn-Hans"
 time_format_default = "2021-01-16"
 time_format_blog = "2021-01-16"
@@ -27,46 +27,75 @@ time_format_blog = "2021-01-16"
 [languages.en]
 title = "Shidinn Language"
 description = ""
-languageName ="English"
+languageName ="🌏 English"
 contentDir = "content/en"
 time_format_default = "2021-01-16"
 time_format_blog = "2021-01-16"
-
-[[menu.main]]
-name = "Wiki"
-weight = 50
-url = "https://wiki.xdi8.top"
-
-# 估计是这个吧
 
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
 
-# 以下是复制的
+[[menu.main]]
+    name = "Wiki"
+    weight = 50
+    url = "https://wiki.xdi8.top"
 
-[params.links]
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
-	name = "Xdi8 Translator"
+[languages.art-x-xdi8.params.links]
+[[languages.art-x-xdi8.params.links.user]]
+	name = "⇧xdi8 ⇧nfi25iYi4oquV"
 	url = "http://xdi8translator.nyoeghau.com/"
 	icon = "fa fa-language"
-        desc = "Xdi8 Translator by Nyoeghau"
+        desc = "⇧xdi8 ⇧nfi25iYi4oquV"
 
-[[params.links.user]]
-  	name = "Bilibili"
+[[languages.art-x-xdi8.params.links.user]]
+  	name = "‹⇧bEr1sEbEr1sE› rT de ⇧utA46H ⇧pzTrL"
   	url = "https://b23.tv/PAJnPD"
-  	icon = "fa fa-camera"
+  	icon = "fab fa-youtube"
         desc = "Bilibili 上的希顶社区"
 
-[params.utterances]
-	repo = "CanCLID/jyutping.org-comment"
-
-[[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/0xis-cn/xdi8.top"
+[[languages.art-x-xdi8.params.links.developer]]
+	name = "⇧b8fz2 de ‹⇧gEt⇧hab› ⇧DuTkA"
+	url = "https://github.com/xdi8/xdi8.github.io"
 	icon = "fab fa-github"
         desc = "本站的 GitHub 仓库"
 
+[languages.cmn-Hans.params.links]
+[[languages.cmn-Hans.params.links.user]]
+	name = "希顶翻译器"
+	url = "http://xdi8translator.nyoeghau.com/"
+	icon = "fa fa-language"
+        desc = "希顶翻译器"
+
+[[languages.cmn-Hans.params.links.user]]
+  	name = "Bilibili 上的希顶社区"
+  	url = "https://b23.tv/PAJnPD"
+  	icon = "fab fa-youtube"
+        desc = "Bilibili 上的希顶社区"
+
+[[languages.cmn-Hans.params.links.developer]]
+	name = "本站的 GitHub 仓库"
+	url = "https://github.com/xdi8/xdi8.github.io"
+	icon = "fab fa-github"
+        desc = "本站的 GitHub 仓库"
+
+[languages.en.params.links]
+[[languages.en.params.links.user]]
+	name = "Shidinn Translator"
+	url = "http://xdi8translator.nyoeghau.com/"
+	icon = "fa fa-language"
+        desc = "希顶翻译器"
+
+[[languages.en.params.links.user]]
+  	name = "Shidinn Community on Bilibili"
+  	url = "https://b23.tv/PAJnPD"
+  	icon = "fab fa-youtube"
+        desc = "Bilibili 上的希顶社区"
+
+[[languages.en.params.links.developer]]
+	name = "GitHub Repository of This Site"
+	url = "https://github.com/xdi8/xdi8.github.io"
+	icon = "fab fa-github"
+        desc = "本站的 GitHub 仓库"
 

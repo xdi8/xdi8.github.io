@@ -9,15 +9,20 @@
     font-weight: 100 900
 }
 
-h1:lang(art-x-xdi8), .xdi8-font {
+*:lang(art-x-xdi8):not(.fa):not(.fab):not(.fas) {
     font-family: "Fira Xdi8 Variable", "Fira Xdi8", FiraGO, "Fira Sans", "Source Sans Variable", "MI Lan Pro VF", sans-serif;
+    text-transform: none !important 
 }
 
 .mt-0 {
     margin-bottom: -0.5em;
 }
 
-.lead.xdi8-font {
-    font-size: 1.35rem 
+.nav-item.dropdown.d-none {
+    display: block !important
+}
+
+.no-xdi8, .dropdown-menu.show a {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important
 }
 
