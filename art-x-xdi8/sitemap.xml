@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/categories/</loc>
     <xhtml:link
@@ -19,9 +18,7 @@
                 hreflang="art-x-xdi8"
                 href="/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <xhtml:link
                 rel="alternate"
@@ -38,9 +35,7 @@
                 hreflang="art-x-xdi8"
                 href="/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -58,5 +53,4 @@
                 href="/tags/"
                 />
   </url>
-  
 </urlset>
