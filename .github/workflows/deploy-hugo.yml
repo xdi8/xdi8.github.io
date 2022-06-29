@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Checkout Submodules
-        uses: textbook/git-checkout-submodule-action@master
+        uses: srt32/git-actions@v0.0.3
+        with:
+          args: git submodule update --init --recursive
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
