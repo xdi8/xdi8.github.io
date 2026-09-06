@@ -9,3 +9,62 @@
     border-bottom: 1px solid #c0c0c0;
     padding-bottom: 0.7rem;
 }
+
+// Subtitle shown underneath the landing title
+.landing-lead {
+    margin-top: 0.8rem;
+    text-align: center;
+    color: #7a7a7a;
+    font-size: 1.05rem;
+}
+
+// Hero quote on the landing page
+blockquote.landing-hero {
+    margin: 2.75rem auto;
+    padding: 0 0.5rem;
+    border-left: 0;
+    text-align: center;
+
+    p {
+        margin-bottom: 0.5rem;
+        font-size: 1.35rem;
+        font-weight: 300;
+        line-height: 1.7;
+        color: #444;
+    }
+
+    cite {
+        display: block;
+        font-size: 0.85rem;
+        font-style: normal;
+        color: #9a9a9a;
+    }
+}
+
+// Vertical rhythm between landing sections
+.landing-section {
+    margin-top: 2.5rem;
+}
+
+.landing-section h2 {
+    margin-top: 0;
+}
+
+// Link list used by the "start here" sections
+.landing-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-bottom: 0.35rem;
+    }
+}
+
+// Bottom bar with the language switch
+.landing-alt {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    color: #9a9a9a;
+}
