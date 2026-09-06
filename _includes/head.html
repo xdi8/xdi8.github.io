@@ -4,9 +4,9 @@
 
   <title>
     {% if page.title %}
-      {{ page.title }} &middot; {{ site.data.site_title[site.active_lang] | default: site.title }}
+      {{ page.title }} &middot; {{ site.data.strings.shidinn[site.active_lang] | default: site.title }}
     {% else %}
-      {{ site.data.site_title[site.active_lang] | default: site.title }}
+      {{ site.data.strings.shidinn[site.active_lang] | default: site.title }}
     {% endif %}
   </title>
   {% seo title=false canonical=false %}
