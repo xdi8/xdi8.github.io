@@ -1,0 +1,8 @@
+title: 希顶社区
+description: >-
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+paginate: 5
+paginate_path: "/blog/page:num"
