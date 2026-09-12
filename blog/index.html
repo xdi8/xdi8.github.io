@@ -5,7 +5,8 @@ lang_switcher: unified
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% assign posts = paginator.posts | where: "lang", site.active_lang %}
+  {% for post in posts %}
   <article class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
