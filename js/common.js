@@ -4,3 +4,9 @@ if (langSwitcher) {
     if (!langSwitcher.contains(event.target)) langSwitcher.open = false
   })
 }
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch(() => {})
+  })
+}
