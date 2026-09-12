@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "XEGOEPUAall";
+  src: url("https://dgck81lnn.github.io/bootstrap-lnn/fonts/XEGOEPUAall.woff2")
+    format("woff2");
+  font-display: block;
+}
+
+[lang] {
+  font-family: var(--font-stack);
+  --font-stack: "Source Sans", "Noto Sans SC", sans-serif;
+  --code-font-stack: "Source Code Pro", monospace, "Noto Sans SC";
+}
+[lang="qsd"] {
+  --font-stack: "XEGOEPUAall", "Segoe UI", "Source Sans", "Noto Sans SC", sans-serif;
+}
