@@ -1,6 +1,10 @@
 /**
   * _variables.scss
   * Contains SCSS variables used in this website's stylesheet.
+  *
+  * Theme colors are defined once as CSS custom properties in `:root` below and
+  * overridden for dark mode via `prefers-color-scheme`. The SCSS variables
+  * further down simply map to those tokens, so components stay theme-agnostic.
   */
 
 // Globals
@@ -11,31 +15,124 @@ $code-font-stack: 'Source Code Pro', monospace;
 
 $xdi8-font-stack: 'XEGOEPUAall', sans-serif;
 
+// Theme tokens
+//
+// `color-scheme: light dark` lets the browser theme native UI (form controls,
+// scrollbars, etc.) to match, and avoids a bright flash before the stylesheet
+// finishes loading.
+
+:root {
+  color-scheme: light dark;
+
+  // Surfaces and text
+  --color-bg: #ffffff;
+  --color-text: #515151;
+  --color-heading: #313131;
+  --color-strong: #303030;
+  --color-subtle: #7a7a7a;
+  --color-muted: #9a9a9a;
+
+  // Borders and rules
+  --color-border: #e5e5e5;
+  --color-border-strong: #c0c0c0;
+  --color-rule: #eeeeee;
+
+  // Links and brand accents
+  --color-link: #5a81b0;
+  --color-accent: #0a3b76;
+
+  // Navigation
+  --color-nav-link: #263663;
+  --color-nav-underline: #2098d1;
+  --color-nav-icon-bg: #0a3b76;
+  --color-nav-icon-text: #ffffff;
+
+  // Code
+  --color-code-bg: #f9f9f9;
+  --color-code-text: #bf616a;
+
+  // Tables
+  --color-table-stripe: #f9f9f9;
+
+  // Message box
+  --color-message-text: #717171;
+  --color-message-bg: #f9f9f9;
+
+  // Pagination
+  --color-pagination: #cccccc;
+  --color-pagination-hover: #f5f5f5;
+
+  // Fonts
+  --code-font-stack: #{$code-font-stack};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    // Surfaces and text
+    --color-bg: #16191d;
+    --color-text: #c3c9d2;
+    --color-heading: #e8ebf0;
+    --color-strong: #f5f7fa;
+    --color-subtle: #9aa3ae;
+    --color-muted: #7f8894;
+
+    // Borders and rules
+    --color-border: #343a42;
+    --color-border-strong: #454c56;
+    --color-rule: #2a2f36;
+
+    // Links and brand accents
+    --color-link: #7fb0e8;
+    --color-accent: #6ba7e6;
+
+    // Navigation
+    --color-nav-link: #b9c6dd;
+    --color-nav-underline: #4a9eea;
+    --color-nav-icon-bg: #1d4e8f;
+    --color-nav-icon-text: #ffffff;
+
+    // Code
+    --color-code-bg: #23272e;
+    --color-code-text: #ff9da6;
+
+    // Tables
+    --color-table-stripe: #1e2228;
+
+    // Message box
+    --color-message-text: #b7bec8;
+    --color-message-bg: #1e2228;
+
+    // Pagination
+    --color-pagination: #6b7480;
+    --color-pagination-hover: #23272e;
+  }
+}
+
 // Body
-$body-text-color: #515151;
-$body-background-color: #ffffff;
-$body-top-border-color: #0A3b76;
+$body-text-color: var(--color-text);
+$body-background-color: var(--color-bg);
+$body-top-border-color: var(--color-accent);
 $body-top-border-width: 5px;
 
 // Links
-$link-color: #5a81b0;
+$link-color: var(--color-link);
 
 // Navigation
-$nav-bottom-border-color: #c0c0c0;
+$nav-bottom-border-color: var(--color-border-strong);
 $nav-bottom-border-width: 1px;
 
-$nav-link-color: #263663;
+$nav-link-color: var(--color-nav-link);
 $nav-link-padding-y: 0.7rem;
 $nav-link-padding-x: 1.5rem;
-$nav-link-underline-color: #2098d1;
+$nav-link-underline-color: var(--color-nav-underline);
 
-$nav-icon-color: #ffffff;
-$nav-icon-background-color: #0A3b76;
+$nav-icon-color: var(--color-nav-icon-text);
+$nav-icon-background-color: var(--color-nav-icon-bg);
 
 // Blog post headings and page titles
-$post-title-color: #0A3b76;
-$post-date-color: #9a9a9a;
+$post-title-color: var(--color-accent);
+$post-date-color: var(--color-muted);
 
 // Message box
-$message-color: #717171;
-$message-background-color: #f9f9f9;
+$message-color: var(--color-message-text);
+$message-background-color: var(--color-message-bg);

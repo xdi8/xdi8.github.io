@@ -7,7 +7,7 @@
   overflow: hidden; // clearfix
   margin: 3rem 0;
   
-  color: #ccc;
+  color: var(--color-pagination);
   text-align: center;
 
   .pagination-text, .fa {
@@ -28,7 +28,7 @@ a.pagination-item {
   &:focus,
   &:hover {
     text-decoration: none;
-    background-color: #f5f5f5;
+    background-color: var(--color-pagination-hover);
   }
 }
 
