@@ -3,7 +3,19 @@ shidinn:
   en: Shidinn
 about:
   zh-Hans: 关于
-  en: about
+  en: About
 blog:
   zh-Hans: 博客
-  en: blog
+  en: Blog
+page_language:
+  zh-Hans: 页面语言
+  en: Page language
+lang_name:
+  zh-Hans: 中文
+  en: English
+lang_unavailable:
+  zh-Hans: 翻译暂缺
+  en: Translation unavailable
+lang_unavailable_message:
+  zh-Hans: 此页面暂无中文版本。
+  en: This page is currently not available in English.

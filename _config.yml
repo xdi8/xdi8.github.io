@@ -7,12 +7,21 @@ url: https://xdi8.top
 paginate: 5
 paginate_path: "/blog/page:num"
 languages:
-  - en
   - zh-Hans
+  - en
 default_lang: zh-Hans
+fallback_canonical_to_default_lang: true
 exclude_from_localization:
   - css
+  - js
   - 404.html
   - CNAME
   - README.md
 parallel_localization: false
+
+defaults:
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: post

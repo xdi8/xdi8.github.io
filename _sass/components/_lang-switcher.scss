@@ -1,0 +1,110 @@
+/**
+  * _lang-switcher.scss
+  * A small, no-JavaScript dropdown for switching the page language. Pair it with
+  * a page title inside a `.page-header` flex row so it sits on the right.
+  *
+  * Markup:
+  *   <div class="page-header">
+  *     <h1 class="page-title">…</h1>
+  *     {% include lang-switcher.html %}
+  *   </div>
+  */
+
+// Title row: heading on the left, switcher on the right, aligned to the
+// heading's text baseline rather than its box.
+.page-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.lang-switcher {
+  position: relative;
+  flex: none;
+  float: right;
+  margin: .5rem 0 .5rem .5rem;
+
+  // The summary is the visible "button".
+  > summary {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: .8rem;
+    line-height: 1rem;
+    color: var(--color-subtle);
+    cursor: pointer;
+    list-style: none; // Firefox: hide the default disclosure marker
+    user-select: none;
+
+    // Safari: hide the default disclosure marker
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-heading);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-nav-underline);
+      outline-offset: 2px;
+    }
+  }
+
+  .lang-switcher-chevron {
+    transform: translateY(.1em);
+    transition: transform .15s ease;
+  }
+
+  &[open] .lang-switcher-chevron {
+    transform: rotate(-180deg);
+  }
+}
+
+.lang-switcher-menu {
+  position: absolute;
+  top: calc(100% + .35rem);
+  right: 0;
+  z-index: 10;
+  min-width: 8rem;
+  padding: .25rem 0;
+  margin: 0;
+  font-size: .8rem;
+  list-style: none;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 .35rem .9rem var(--color-shadow);
+
+  a {
+    display: block;
+    padding: .35rem .75rem;
+    color: var(--color-text);
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+      color: var(--color-link);
+      text-decoration: none;
+      background-color: var(--color-surface-hover);
+    }
+
+    &.lang-switcher-active {
+      color: var(--color-accent);
+      font-weight: bold;
+    }
+
+    &.lang-switcher-unavailable {
+      color: var(--color-danger);
+    }
+  }
+}
+
+// On narrow screens let the switcher drop below a wrapping title instead of
+// squeezing it.
+@media (max-width: 30em) {
+  .page-header {
+    flex-wrap: wrap;
+  }
+}

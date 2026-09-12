@@ -4,11 +4,11 @@
   <meta name="color-scheme" content="light dark">
 
   <title>
-    {% if page.title %}
-      {{ page.title }} &middot; {{ site.data.strings.shidinn[site.active_lang] | default: site.title }}
-    {% else %}
-      {{ site.data.strings.shidinn[site.active_lang] | default: site.title }}
-    {% endif %}
+    {%- if page.title -%}
+      {{ page.title }} &middot;
+    {%- elsif page.title_key -%}
+      {{ site.data.strings[page.title_key][site.active_lang] }} &middot;
+    {%- endif %} {{ site.data.strings.shidinn[site.active_lang] | default: site.title }}
   </title>
   {% seo title=false canonical=false %}
   {% I18n_Headers %}

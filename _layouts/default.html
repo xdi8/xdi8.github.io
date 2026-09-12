@@ -6,13 +6,15 @@
   <body>
     <nav class="nav-main">
       <ul>
-        <li class="hvr-underline-reveal"><a href="{{ site.baseurl }}/about">{{ site.data.strings.about[site.active_lang] }}</a></li>
-        <li class="logo"><a class="hvr-ripple-out" href="{{ site.baseurl }}/">C</a></li>
-        <li class="hvr-underline-reveal"><a href="{{ site.baseurl }}/blog/">{{ site.data.strings.blog[site.active_lang] }}</a></li>
+        <li class="nav-item"><a href="{{ site.baseurl }}/about">{{ site.data.strings.about[site.active_lang] }}</a></li>
+        <li class="nav-logo"><a class="hvr-ripple-out" href="{{ site.baseurl }}/">C</a></li>
+        <li class="nav-item"><a href="{{ site.baseurl }}/blog/">{{ site.data.strings.blog[site.active_lang] }}</a></li>
       </ul>
     </nav>
 
     <div class="container content">
+      {% if page.lang_switcher != false %}{% include lang-switcher.html %}{% endif %}
+
       <main>
         {{ content }}
       </main>
@@ -26,5 +28,6 @@
       </footer>
     </div>
 
+    <script src="{{ site.baseurl }}/js/common.js" type="text/javascript"></script>
   </body>
 </html>

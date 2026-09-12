@@ -30,7 +30,38 @@
     }
   }
 
-  li.logo a {
+  li.nav-item {
+    @include hacks();
+
+    position: relative;
+    overflow: hidden;
+
+    text-transform: lowercase;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $nav-link-underline-color;
+      height: 2px;
+
+      @include prefix(transform, translateY(4px));
+      @include prefix(transition-property, transform);
+      @include prefix(transition-duration, 0.2s);
+      @include prefix(transition-timing-function, ease-out);
+    }
+
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+      @include prefix(transform, translateY(0));
+    }
+  }
+
+  li.nav-logo a {
     color: $nav-icon-color;
     background: $nav-icon-background-color;
     font-weight: bold;

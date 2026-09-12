@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Blog
+title_key: blog
+unilang: true
 ---
 
 <div class="posts">
@@ -12,7 +13,7 @@ title: Blog
       </a>
     </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%F" }}</time>
 
     {% if post.truncated_preview == true or site.blog.truncated_preview and post.truncated_preview != false %}
       {{ post.excerpt }}
