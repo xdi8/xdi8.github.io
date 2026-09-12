@@ -18,6 +18,7 @@ exclude_from_localization:
   - CNAME
   - README.md
 parallel_localization: false
+force_polling: true
 
 defaults:
 - scope:

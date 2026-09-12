@@ -63,13 +63,24 @@
 
   li.nav-logo a {
     color: $nav-icon-color;
-    background: $nav-icon-background-color;
     font-weight: bold;
-    width: 1.6em;
-    height: 1.6em;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 50px;
-    line-height: 1.6em;
+    line-height: 1;
     margin: 0 1rem;
     padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  li.nav-logo a img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
   }
 }
