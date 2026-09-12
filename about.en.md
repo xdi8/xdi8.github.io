@@ -50,5 +50,3 @@ This language belongs to everyone willing to light a torch for it. If you would 
 - [Shidinn Translator](http://xdi8translator.nyoeghau.com/) — try writing your own name in Shidinn
 - [xdi8 · GitHub](https://github.com/xdi8) — source code and this website
 - [Shidinn culture · Bilibili](https://space.bilibili.com/1022791189) — creations and sharing
-
-<p class="landing-alt"><a {% static_href %}href="/about"{% endstatic_href %}>以中文阅读（本页）</a>&nbsp;·&nbsp;English version</p>
