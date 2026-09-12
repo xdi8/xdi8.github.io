@@ -5,7 +5,7 @@ title: 关于
 ---
 
 <p class="message">
-  希顶语（<span lang="qsd"></span>），全称希顶字母华语（<span lang="qsd">  </span>），是一位民间语言学家<strong>黄雀飞</strong>试图用字母文字重构汉语的尝试。
+  希顶语（%%⇧xdi8%%），全称希顶字母华语（%%⇧xdi8 ^aho ^fa7Vi%%），是一位民间语言学家<strong>黄雀飞</strong>试图用字母文字重构汉语的尝试。
 </p>
 
 ## 一个人的语言

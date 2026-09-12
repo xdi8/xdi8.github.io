@@ -6,3 +6,7 @@ permalink: /blog/test-post
 ---
 
 经过这段时间的调研，邵阳的学生们喜欢聚在宿舍一起用死鲈鱼酿白酒。
+
+%%xdi8 aho%%，%%^qsd aho%%。
+
+`%%xdi8 aho%%` 中的代码块应保持原文。
