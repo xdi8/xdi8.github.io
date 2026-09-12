@@ -1,4 +1,5 @@
-{% if page.rendered_lang != site.active_lang and page.unilang != true %}
+{% if page.lang_switcher != false %}
+{% if page.rendered_lang != site.active_lang and page.lang_switcher != 'unified' %}
 <p class="message" lang="{{ site.active_lang }}">{{ site.data.strings.lang_unavailable_message[site.active_lang] }}</p>
 {% endif %}
 <details class="lang-switcher">
@@ -9,10 +10,8 @@
   </summary>
   <ul class="lang-switcher-menu">
     {% for lang in site.languages %}
-    {%- unless page.lang_unified %}
-      {%- assign is_unavailable = true %}
-      {%- if page.unilang or page.available_languages contains lang %}{% assign is_unavailable = false %}{% endif %}
-    {%- endunless %}
+    {%- assign is_unavailable = true %}
+    {%- if page.lang_switcher == 'unified' or page.available_languages contains lang %}{% assign is_unavailable = false %}{% endif %}
     <li lang="{{ lang }}">
       <a
         class="lang-switcher-link
@@ -20,7 +19,7 @@
           {%- elsif is_unavailable %} lang-switcher-unavailable
           {%- endif -%}
         "
-        {% if is_unavailable %} title="{{ site.data.strings.lang_unavailable[site.active_lang] }}"{% endif %}
+        {% if is_unavailable %} title="{{ site.data.strings.lang_unavailable[lang] }}"{% endif %}
         {% static_href %}href="{% if lang == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ lang }}{{page.url}}{% endif %}"{% endstatic_href %}
         hreflang="{{ lang }}"
         {% if lang == site.active_lang %} aria-current="true"{% endif %}
@@ -29,3 +28,4 @@
     {% endfor %}
   </ul>
 </details>
+{% endif %}
