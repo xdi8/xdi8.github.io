@@ -5,7 +5,14 @@ lang_switcher: unified
 ---
 
 <div class="posts">
+  {% comment %}
+    Older posts carry no `lang`, so at runtime they are relabelled to the active
+    language by jekyll-polyglot. Pick one page per post URL: posts written for
+    this language first, then the language-neutral ones.
+  {% endcomment %}
   {% assign posts = paginator.posts | where: "lang", site.active_lang %}
+  {% assign fallback_posts = paginator.posts | where_exp: "post", "post.lang == nil or post.lang == ''" %}
+  {% assign posts = posts | concat: fallback_posts %}
   {% for post in posts %}
   <article class="post">
     <h1 class="post-title">
