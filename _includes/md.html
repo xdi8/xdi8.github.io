@@ -1,0 +1,14 @@
+{% comment %}
+  在页面中插入 _md/ 集合里的 markdown 片段，并用 kramdown 渲染为 HTML。
+  对应语言的片段缺失时，不输出任何内容。
+
+  用法：{% include md.html key="index/sections" %}
+
+  片段存放于 _md/ 目录（集合名 md，output: false），文件命名与
+  jekyll-polyglot 页面约定一致：默认语言 index/sections.md，其他语言
+  index/sections.en.md。片段 front matter 需写明：
+    lang: 语言代码（与 site.active_lang 匹配）
+    key:  片段标识（即本 include 的 key 参数）
+{% endcomment %}
+{% assign md_doc = site.md | where: "key", include.key | where: "lang", site.active_lang | first %}
+{% if md_doc %}{{ md_doc.content | markdownify }}{% endif %}

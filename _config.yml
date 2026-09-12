@@ -23,6 +23,10 @@ exclude_from_localization:
 parallel_localization: false
 force_polling: true
 
+collections:
+  md:
+    output: false
+
 defaults:
 - scope:
     path: ""
