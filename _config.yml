@@ -13,6 +13,7 @@ languages:
 default_lang: zh-Hans
 fallback_canonical_to_default_lang: true
 exclude_from_localization:
+  - asset
   - css
   - js
   - fonts
