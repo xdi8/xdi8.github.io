@@ -34,9 +34,9 @@ a.pagination-item {
 
 @media (max-width: 30em) {
   .pagination {
-    margin: 0 -1.5rem 1rem;
+    //margin: 0 -1.5rem 1rem;
 
-    .fa {
+    .icon {
       font-size: 2rem;
     } 
   }
@@ -50,6 +50,6 @@ a.pagination-item {
   }
 
   .pagination-text {
-    display: none;
+    @include visually-hidden;
   }
 }

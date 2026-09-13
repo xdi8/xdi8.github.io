@@ -1,6 +1,7 @@
 shidinn:
   zh-Hans: 希顶语
   en: Shidinn
+
 home:
   zh-Hans: 首页
   en: Home
@@ -10,6 +11,7 @@ about:
 blog:
   zh-Hans: 博客
   en: Blog
+
 page_language:
   zh-Hans: 页面语言
   en: Page language
@@ -22,3 +24,13 @@ lang_unavailable:
 lang_unavailable_message:
   zh-Hans: 此页面暂无中文版本。
   en: This page is currently not available in English.
+
+pagination_label:
+  zh-Hans: 翻页
+  en: Pagination
+pagination_older:
+  zh-Hans: 下一页
+  en: older posts
+pagination_newer:
+  zh-Hans: 上一页
+  en: newer posts
