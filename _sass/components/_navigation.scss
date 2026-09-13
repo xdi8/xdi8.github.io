@@ -21,6 +21,8 @@
 
   li {
     display: inline-block;
+    width: 5.5rem;
+    text-transform: lowercase;
 
     a {
       color: $nav-link-color;
@@ -35,8 +37,6 @@
 
     position: relative;
     overflow: hidden;
-
-    text-transform: lowercase;
 
     &:before {
       content: "";

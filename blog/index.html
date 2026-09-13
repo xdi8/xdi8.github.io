@@ -21,15 +21,25 @@ lang_switcher: unified
   {% endfor %}
 </div>
 
+{% capture chevron_left %}
+<svg role="presentation" fill="currentColor" class="icon" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+</svg>
+{% endcapture %}
+{% capture chevron_right %}
+<svg role="presentation" fill="currentColor" class="icon" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+</svg>
+{% endcapture %}
 <div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-item" href="{{ paginator.next_page_path }}">
-      <i class="fa fa-arrow-circle-o-left"></i> 
+      {{ chevron_left | strip }}
       <span class="pagination-text">older posts</span>
     </a>
   {% else %}
     <span class="pagination-item">
-      <i class="fa fa-arrow-circle-o-left"></i> 
+      {{ chevron_left | strip }}
       <span class="pagination-text">older posts</span>
     </span>
   {% endif %}
@@ -38,13 +48,13 @@ lang_switcher: unified
 
   {% if paginator.previous_page %}
     <a class="pagination-item" href="{{ paginator.previous_page_path }}">
-      <span class="pagination-text">newer posts</span> 
-      <i class="fa fa-arrow-circle-o-right"></i>
+      <span class="pagination-text">newer posts</span>
+      {{ chevron_right | strip }}
     </a>
   {% else %}
     <span class="pagination-item">
-      <span class="pagination-text">newer posts</span> 
-      <i class="fa fa-arrow-circle-o-right"></i>
+      <span class="pagination-text">newer posts</span>
+      {{ chevron_right | strip }}
     </span>
   {% endif %}
 </div>

@@ -71,3 +71,10 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: var(--color-table-stripe);
 }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -.25em;
+}
