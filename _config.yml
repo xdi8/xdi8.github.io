@@ -6,7 +6,7 @@ url: https://xdi8.top
 
 paginate: 5
 paginate_path: "/blog/page:num"
-excerpt_separator: "###"
+excerpt_separator: "\n##"
 languages:
   - zh-Hans
   - en
