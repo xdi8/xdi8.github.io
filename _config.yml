@@ -5,7 +5,7 @@ description: >-
 url: https://xdi8.top
 
 paginate: 5
-paginate_path: "/blog/page:num"
+paginate_path: "/bulletin/page:num"
 excerpt_separator: "\n##"
 languages:
   - zh-Hans
@@ -26,6 +26,22 @@ parallel_localization: false
 collections:
   md:
     output: false
+
+navigation:
+  left:
+    - key: navigation
+      url: /navigation
+    - key: about
+      url: /about
+    - key: wiki
+      url: https://wiki.xdi8.top/
+  right:
+    - key: bulletin
+      url: /bulletin
+    - key: tutorials
+      url: /tutorials
+    - key: studio
+      url: /studio
 
 defaults:
 - scope:

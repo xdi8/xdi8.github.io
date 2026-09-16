@@ -6,10 +6,23 @@
   <body>
     <nav class="nav-main">
       <ul>
-        <li class="nav-item"><a href="{{ site.baseurl }}/about">{{ site.data.strings.about[site.active_lang] }}</a></li>
+        {% assign left_size = site.navigation.left | size %}
+        {% assign right_size = site.navigation.right | size %}
+        {% for item in site.navigation.left reversed %}
+        <li class="nav-item" data-side="left" data-dist="{{ left_size | plus: 1 | minus: forloop.index }}"><a href="{{ site.baseurl }}{{ item.url }}">{{ site.data.strings[item.key][site.active_lang] }}</a></li>
+        {% endfor %}
+        {% if left_size < right_size %}{% assign diff = right_size | minus: left_size %}{% for i in (1..diff) %}
+        <li class="nav-item" data-side="left" data-dist="{{ left_size | plus: i }}"><a href="{{ site.baseurl }}/">{{ site.data.strings.home[site.active_lang] }}</a></li>
+        {% endfor %}{% endif %}
         <li class="nav-logo"><a class="hvr-ripple-out" href="{{ site.baseurl }}/" title="{{ site.data.strings.home[site.active_lang] }}"><img src="{{ site.baseurl }}/asset/logo4.svg" alt="Logo"></a></li>
-        <li class="nav-item"><a href="{{ site.baseurl }}/blog/">{{ site.data.strings.blog[site.active_lang] }}</a></li>
+        {% for item in site.navigation.right %}
+        <li class="nav-item" data-side="right" data-dist="{{ forloop.index }}"><a href="{{ site.baseurl }}{{ item.url }}">{{ site.data.strings[item.key][site.active_lang] }}</a></li>
+        {% endfor %}
+        {% if right_size < left_size %}{% assign diff = left_size | minus: right_size %}{% for i in (1..diff) %}
+        <li class="nav-item" data-side="right" data-dist="{{ right_size | plus: i }}"><a href="{{ site.baseurl }}/">{{ site.data.strings.home[site.active_lang] }}</a></li>
+        {% endfor %}{% endif %}
       </ul>
+      <div class="nav-dropdown"><div></div></div>
     </nav>
 
     <div class="container content">

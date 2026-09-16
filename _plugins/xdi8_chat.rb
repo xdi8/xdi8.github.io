@@ -49,7 +49,7 @@ module Xdi8Chat
   end
 end
 
-# 遍历全部页面与文档，覆盖纯 HTML 页面、_md 片段宿主页及博文等。
+# 遍历全部页面与文档，覆盖纯 HTML 页面、_md 片段宿主页及通讯文章等。
 # 限定在 <body> 内替换，避免污染 jekyll-seo-tag 在 <head> 生成的
 # meta description / og:* / JSON-LD。
 Jekyll::Hooks.register :site, :post_render do |site, _payload|

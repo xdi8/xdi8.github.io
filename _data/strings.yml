@@ -5,12 +5,24 @@ shidinn:
 home:
   zh-Hans: 首页
   en: Home
+navigation:
+  zh-Hans: 导航
+  en: Navigation
+wiki:
+  zh-Hans: 希顶维基
+  en: Wiki
 about:
   zh-Hans: 关于
   en: About
-blog:
-  zh-Hans: 博客
-  en: Blog
+bulletin:
+  zh-Hans: 通讯
+  en: Bulletin
+tutorials:
+  zh-Hans: 教程
+  en: Tutorials
+studio:
+  zh-Hans: 希顶工作室
+  en: Studio
 
 page_language:
   zh-Hans: 页面语言

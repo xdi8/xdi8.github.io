@@ -1,14 +1,15 @@
 /**
-  * _navigation.scss
-  * Styles for the main navigation bar on top of the page.
-  */
+ * _navigation.scss
+ * Styles for the main navigation bar on top of the page.
+ */
 
 .nav-main {
   font-size: $font-size; // override mobile media query
   text-align: center;
   margin-bottom: 4rem;
+  position: relative;
 
-  @media (max-width: 38em) {
+  @media (max-width: $mobile-breakpoint) {
     margin-bottom: 2rem;
   }
 
@@ -17,16 +18,21 @@
     border-bottom-color: $nav-bottom-border-color;
     border-bottom-width: $nav-bottom-border-width;
     border-bottom-style: solid;
+    white-space: nowrap;
+    max-width: $content-max-width;
+    margin: 0 auto;
   }
 
   li {
     display: inline-block;
-    width: 5.5rem;
-    text-transform: lowercase;
+    width: 5em;
+    text-transform: uppercase;
 
     a {
       color: $nav-link-color;
-      display: block;
+      display: flex;
+      justify-content: center;
+      white-space: nowrap;
       text-decoration: none;
       padding: $nav-link-padding-y $nav-link-padding-x;
     }
@@ -37,6 +43,15 @@
 
     position: relative;
     overflow: hidden;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    &.nav-hidden {
+      opacity: 0;
+      pointer-events: none;
+      width: 0;
+      margin: 0;
+      padding: 0;
+    }
 
     &:before {
       content: "";
@@ -74,6 +89,11 @@
     align-items: center;
     justify-content: center;
     vertical-align: middle;
+    cursor: default;
+  }
+
+  &.has-hidden li.nav-logo a {
+    cursor: pointer;
   }
 
   li.nav-logo a img {
@@ -82,5 +102,45 @@
     object-fit: contain;
     display: block;
     margin: auto;
+  }
+
+  .nav-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 1rem);
+    max-width: calc(#{$content-max-width});
+    padding: 0 0 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease, visibility 0.15s ease;
+    z-index: 100;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    > div {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-top: 3px solid var(--color-nav-underline);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      padding: 0.75rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      justify-content: center;
+    }
+
+    a {
+      color: $nav-link-color;
+      text-decoration: none;
+      white-space: nowrap;
+      padding: 0.25rem 0.5rem;
+    }
   }
 }

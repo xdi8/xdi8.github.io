@@ -10,6 +10,8 @@
 // Globals
 $font-size: 17px;
 $font-size-mobile: 14px;
+$content-max-width: 38rem;
+$mobile-breakpoint: 38em;
 
 $code-font-stack: 'Source Code Pro', monospace;
 
@@ -139,13 +141,13 @@ $nav-bottom-border-width: 1px;
 
 $nav-link-color: var(--color-nav-link);
 $nav-link-padding-y: 0.7rem;
-$nav-link-padding-x: 1.5rem;
+$nav-link-padding-x: 0.7rem;
 $nav-link-underline-color: var(--color-nav-underline);
 
 $nav-icon-color: var(--color-nav-icon-text);
 $nav-icon-background-color: var(--color-nav-icon-bg);
 
-// Blog post headings and page titles
+// Bulletin post headings and page titles
 $post-title-color: var(--color-accent);
 $post-date-color: var(--color-muted);
 
