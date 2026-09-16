@@ -37,6 +37,10 @@ lang_unavailable_message:
   zh-Hans: 此页面暂无中文版本。
   en: This page is currently not available in English.
 
+read_more:
+  zh-Hans: 阅读全文
+  en: Read more
+
 pagination_label:
   zh-Hans: 翻页
   en: Pagination

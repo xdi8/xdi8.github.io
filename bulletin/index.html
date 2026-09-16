@@ -16,7 +16,7 @@ lang_switcher: unified
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%F" }}</time>
 
     {{ post.excerpt }}
-    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ site.data.strings.read_more[site.active_lang] }}</a>
   </article>
   {% endfor %}
 </div>
